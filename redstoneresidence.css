@@ -1,0 +1,482 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #2C2C2C; /* Gunmetal */
+    padding: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.company-name {
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; /* Centers the text */
+}
+
+/* Navigation Styles */
+.nav-header {
+    background-color: #DC143C; /* Crimson Red */
+    padding: 10px 0;
+    color: white;
+    font-family: 'Playfair Display', serif; /* Elegant font for navigation */
+    font-size: 3rem;
+}
+
+.nav-header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.nav-header a:hover {
+    text-decoration: underline;
+}
+
+/* Video Section */
+.video-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover;
+}
+
+.video-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Playfair Display', serif; /* Elegant font */
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 3s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Redstone Section */
+.redstone-section {
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,115,121,1) 92%);
+}
+
+.redstone-section .text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.redstone-section .text-content h1 {
+    font-size: 3rem;
+    color: #e63946;
+    margin-bottom: 20px;
+    max-width: 75%;
+}
+
+.redstone-section .text-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: #f1faee;
+    max-width: 75%;
+    margin-top: 50px;
+}
+
+.redstone-section .image-container {
+    flex: 1;
+    max-width: 50%;
+    text-align: center;
+}
+
+.redstone-section .image-container img {
+    width: 120%;
+    height: auto;
+    max-width: 620px;
+    border: none;
+    border-radius: 10px;
+}
+
+.redstone-section .image-container hr {
+    margin-top: 15px;
+    border: none;
+    border-top: 2px solid #e63946;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    .redstone-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+}
+/* Milestone Section */
+.milestones-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    min-height: 100vh;
+    background: rgb(13,45,79);
+    background: radial-gradient(circle, rgba(13,45,79,1) 39%, rgba(8,81,135,1) 52%, rgba(27,81,120,1) 53%, rgba(20,48,74,1) 77%);
+}
+.milestones-image {
+    flex: 1;
+    max-width: 60%;
+    text-align: center;
+    padding: 20px;
+}
+.milestones-image img {
+    width: 120%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+.milestones-text {
+    flex: 1;
+    max-width: 40%;
+    padding: 20px;
+    text-align: left;
+}
+.milestones-text h2 {
+    font-size: 3.2rem;
+    color: #a7bbd7;
+    margin-bottom: 40px;
+}
+.milestones-text h3 {
+    font-size: 3rem;
+    color: #70c752;
+    margin-bottom: 10px;
+}
+.milestones-text p {
+    font-size: 0.9rem;
+    color: #c4c4c4;
+    margin: 5px 0 20px;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+@media (max-width: 768px) {
+    .milestones-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    .milestones-text {
+        max-width: 100%;
+        padding-right: 0;
+    }
+    .milestones-text h2 {
+        font-size: 2rem;
+    }
+    .milestones-text h3 {
+        font-size: 1.5rem;
+    }
+    .milestones-text p {
+        font-size: 0.75rem;
+    }
+    .milestones-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+/* Our Story Section */
+.our-story {
+    padding: 50px;
+    background: #f7f7f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.story-text {
+    flex: 1;
+    text-align: left;
+}
+
+.story-text h1 {
+    font-size: 4rem;
+    color: #baaaab;
+}
+
+.story-text p {
+    font-size: 1.50rem;
+    line-height: 1.6;
+    color: #d9cdc9;
+    max-width: 60%;
+}
+
+.story-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Agents Page */
+.agents-container {
+    padding: 50px;
+    background-color: #f1faee;
+}
+
+.header {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #d6d6e0;
+}
+
+.divider {
+    width: 80%;
+    margin: 20px auto;
+    border: 1px solid #c1ca8c;
+}
+
+.agent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgb(51,30,30);
+    background: linear-gradient(90deg, rgba(51,30,30,1) 23%, rgba(189,35,35,1) 64%, rgba(184,137,71,1) 100%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.agent-image {
+    flex: 1;
+}
+
+.agent-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.agent-info {
+    flex: 2;
+    text-align: left;
+    color: #000000;
+}
+
+.agent-info h2 {
+    font-size: 2.0rem;
+    color: #ececec;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    color: #efefef;
+}
+/* Footer Styles */
+.footer-container {
+background-color: #2C2C2C; /* Gunmetal */
+color: rgb(110, 109, 109);
+padding: 40px 20px;
+text-align: center;
+}
+
+.social-links {
+margin-bottom: 20px;
+}
+
+.social-link {
+color: white;
+text-decoration: none;
+font-family: 'Playfair Display', serif;
+font-size: 1.2rem;
+margin: 0 15px;
+font-weight: bold;
+}
+
+.social-link:hover {
+text-decoration: underline;
+}
+
+.legal-links {
+margin-top: 30px;
+font-family: 'Arial', sans-serif;
+font-size: 1rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.legal-link {
+color: #e63946; /* Crimson Red */
+text-decoration: none;
+margin: 0 15px;
+}
+
+.legal-link:hover {
+text-decoration: underline;
+}
+
+.legal-links::before,
+.legal-links::after {
+content: "";
+flex-grow: 1;
+border-top: 1px solid #e63946;
+margin: 0 10px;
+}
+
+/* Add gradient background to the Redstone Section */
+.redstone-section {
+background: linear-gradient(135deg, #2b2b3d 0%, #1a1a2e 100%);
+}
+
+/* Add gradient to the Our Story Section */
+.our-story {
+background: linear-gradient(135deg, #f7f7f7 0%, #e63946 100%);
+}
+/* Navigation links hover effect */
+.nav-header a:hover {
+color: #e63946;
+text-decoration: underline;
+transition: color 0.3s ease;
+}
+
+/* Social media links hover effect */
+.social-link:hover {
+color: #e63946;
+text-decoration: underline;
+transform: scale(1.1); /* Slight zoom effect */
+transition: transform 0.3s ease;
+}
+/* Button Style */
+button {
+background-color: #e63946;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 1.2rem;
+cursor: pointer;
+border-radius: 5px;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+button:hover {
+background-color: #f1faee;
+color: #e63946;
+transform: scale(1.05); /* Slight zoom effect */
+}
+/* Image Hover Effect */
+.agent-photo {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent-photo:hover {
+transform: scale(1.1); /* Slight zoom effect */
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+/* Smooth Scrolling */
+html {
+scroll-behavior: smooth;
+}
+/* Card Hover Effect for Agents */
+.agent {
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.agent:hover {
+transform: translateY(-10px); /* Lift effect */
+box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+/* Heading Animation */
+h1, h2 {
+animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/* Smooth Fade-in for Text */
+.text-content p {
+animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+/* Floating Action Button (FAB) */
+.fab-button {
+position: fixed;
+bottom: 20px;
+right: 20px;
+background-color: #e63946;
+color: white;
+border-radius: 50%;
+padding: 15px;
+font-size: 2rem;
+border: none;
+cursor: pointer;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
+}
+
+/* FAB Hover Effect */
+.fab-button:hover {
+transform: scale(1.1);
+}
+/* Add fade-in effect to sections */
+section {
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+section.visible {
+opacity: 1;
+}
